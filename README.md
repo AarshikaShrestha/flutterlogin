@@ -43,10 +43,11 @@ README.md
 ```
 
 ## Screenshots
-Login : 
-assets/login.png
-Register : 
-assets/registration.png
+### Login
+![Login screen](assets/login.png)
+
+### Register
+![Registration screen](assets/registration.png)
 
 
 ## How to Run
