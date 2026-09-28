@@ -1,6 +1,6 @@
 {
-    "name": "sameer_dada",
-    "short_name": "sameer_dada",
+    "name": "authflow",
+    "short_name": "authflow",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

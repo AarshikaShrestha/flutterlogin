@@ -35,12 +35,19 @@ lib/
 │   └── app_theme.dart
 └── widgets/
 	 └── custom_text_field.dart
-screenshots/
+assets/
 ├── login.png            # Add the Login screenshot here
 └── registration.png     # Add the Registration screenshot here
 pubspec.yaml
 README.md
 ```
+
+## Screenshots
+Login : 
+assets/login.png
+Register : 
+assets/registration.png
+
 
 ## How to Run
 
