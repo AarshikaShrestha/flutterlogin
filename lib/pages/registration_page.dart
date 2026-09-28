@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../theme/app_theme.dart';
 import '../widgets/custom_text_field.dart';
+import '../widgets/auth_flow_logo.dart';
 
 class RegistrationPage extends StatefulWidget {
   const RegistrationPage({super.key});
@@ -55,7 +56,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  const _AuthBrand(),
+                  const AuthFlowLogo(),
                   const SizedBox(height: 30),
                   Text(
                     'Create your account',
@@ -188,36 +189,6 @@ class _RegistrationPageState extends State<RegistrationPage> {
           ),
         ),
       ),
-    );
-  }
-}
-
-class _AuthBrand extends StatelessWidget {
-  const _AuthBrand();
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Container(
-          width: 42,
-          height: 42,
-          decoration: BoxDecoration(
-            color: AppTheme.mint,
-            borderRadius: BorderRadius.circular(13),
-          ),
-          child: const Icon(Icons.lock_person_outlined, color: AppTheme.ink, size: 22),
-        ),
-        const SizedBox(width: 11),
-        const Text(
-          'AuthFlow',
-          style: TextStyle(
-            color: AppTheme.ink,
-            fontSize: 20,
-            fontWeight: FontWeight.w800,
-          ),
-        ),
-      ],
     );
   }
 }

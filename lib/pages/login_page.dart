@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../theme/app_theme.dart';
 import '../widgets/custom_text_field.dart';
+import '../widgets/auth_flow_logo.dart';
 import 'registration_page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -62,7 +63,7 @@ class _LoginPageState extends State<LoginPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  const _AuthBrand(),
+                  const AuthFlowLogo(),
                   const SizedBox(height: 42),
                   Text(
                     'Welcome back',
@@ -121,17 +122,6 @@ class _LoginPageState extends State<LoginPage> {
                       ],
                     ),
                   ),
-                  Align(
-                    alignment: Alignment.centerRight,
-                    child: TextButton(
-                      onPressed: () => ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(
-                          content: Text('Password reset is not connected in this demo.'),
-                        ),
-                      ),
-                      child: const Text('Forgot password?'),
-                    ),
-                  ),
                   const SizedBox(height: 12),
                   FilledButton(onPressed: _login, child: const Text('Log in')),
                   const SizedBox(height: 22),
@@ -155,36 +145,6 @@ class _LoginPageState extends State<LoginPage> {
           ),
         ),
       ),
-    );
-  }
-}
-
-class _AuthBrand extends StatelessWidget {
-  const _AuthBrand();
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Container(
-          width: 46,
-          height: 46,
-          decoration: BoxDecoration(
-            color: AppTheme.mint,
-            borderRadius: BorderRadius.circular(14),
-          ),
-          child: const Icon(Icons.lock_person_outlined, color: AppTheme.ink, size: 24),
-        ),
-        const SizedBox(width: 12),
-        const Text(
-          'AuthFlow',
-          style: TextStyle(
-            color: AppTheme.ink,
-            fontSize: 21,
-            fontWeight: FontWeight.w800,
-          ),
-        ),
-      ],
     );
   }
 }

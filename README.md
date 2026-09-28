@@ -47,7 +47,7 @@ README.md
 1. Clone the repository:
 
 	```bash
-	git clone https://github.com/YOUR-USERNAME/flutter-login-registration-app.git
+	git clone https://github.com/AarshikaShrestha/flutterlogin.git
 	cd flutter-login-registration-app
 	```
 
